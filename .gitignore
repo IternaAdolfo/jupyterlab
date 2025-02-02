@@ -12,3 +12,4 @@
 /yfinance.cache
 /.env
 /outdated_OpenAI.ipynb
+/crypto_data_cache.pkl
