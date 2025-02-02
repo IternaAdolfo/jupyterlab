@@ -128,7 +128,7 @@ def run_backtest(max_trades):
             # Set initial cash
             initial_value = 100000.0
             cerebro.broker.setcash(initial_value)
-            
+
             # Set commission to 0.1%
             cerebro.broker.setcommission(commission=0.001)
             
@@ -173,6 +173,9 @@ def run_backtest(max_trades):
 results_max_5 = run_backtest(max_trades=5)
 results_max_3 = run_backtest(max_trades=3)
 
+results_max_8 = run_backtest(max_trades=8)
+results_max_13 = run_backtest(max_trades=13)
+
 # Print results for MAX = 5
 print("\nResults for MAX = 5:")
 print(tabulate(results_max_5, headers="keys", tablefmt="grid"))
@@ -180,3 +183,11 @@ print(tabulate(results_max_5, headers="keys", tablefmt="grid"))
 # Print results for MAX = 3
 print("\nResults for MAX = 3:")
 print(tabulate(results_max_3, headers="keys", tablefmt="grid"))
+
+# Print results for MAX = 8
+print("\nResults for MAX = 8:")
+print(tabulate(results_max_8, headers="keys", tablefmt="grid"))
+
+# Print results for MAX = 13
+print("\nResults for MAX = 13:")
+print(tabulate(results_max_13, headers="keys", tablefmt="grid"))
